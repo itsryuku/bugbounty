@@ -1,0 +1,85 @@
+### credits: https://m0chan.github.io/2019/12/17/Bug-Bounty-Cheetsheet.html
+https://dorks.faisalahmed.me/#
+
+Just enter your domain/subdomain and select which you would like to dork for
+https://drive.google.com/file/d/1g-vWLd998xJwLNci7XuZ6L1hRXFpIAaF/view
+
+site:your-target.com inurl:id=
+site:your-target.com filetype:php
+site:your-target.com intitle:upload
+inurl:”.php?id=” intext:”View cart”
+inurl:”.php?cid=” intext:”shopping”
+inurl:/news.php?include=
+inurl:”.php?query=”
+
+
+#Open Redirect
+inurl:url=https
+inurl:url=http
+inurl:u=https
+inurl:u=http
+inurl:redirect?https
+inurl:redirect?http
+inurl:redirect=https
+inurl:redirect=http
+inurl:link=http
+inurl:link=https
+inurl:redirectUrl=http site:paypal.com
+
+#Codepad - Online Interpreter/Compiler, Sometimes Hard Coded Creds
+site:codepad.co "Tesla"
+
+#Scribd - EBooks / Although Sometimes Internal Files
+site:scribd.com "Tesla"
+
+#NodeJS Source
+site:npmjs.com "Tesla"
+site:npm.runkit.com "Tesla"
+
+#Libararies IO
+site:libraries.io "Tesla"
+
+#Coggle - MindMapping Software
+site:coggle.it "Tesla"
+
+#Papaly
+site:papaly.com "Tesla"
+
+#Trello - Board Software
+site:trello.com "Tesla"
+
+#Prezi - Presentation Software
+site:prezi.com "Tesla"
+
+#JSDeliver - CDN for NPM & GitHub
+site:jsdelivr.net "Tesla"
+
+#Codepen - Online Coding Tool
+site:codepen.io "Tesla"
+
+#Pastebin - Online Txt Sharing
+site:pastebin.com "Tesla"
+
+#Repl - Online Compiler
+site:repl.it "Tesla"
+
+#Gitter - Open Source Messaging
+site:gitter.im "Tesla"
+
+#BitBucket - Similar to GitHub can Store Source Code
+site:bitbucket.org "Tesla"
+
+#Atlassian - Useful to find Confluence and Jira
+site:*.atlassian.net "Tesla"
+
+#Gitlab - Source Code
+inurl:gitlab "Tesla"
+
+#Find S3 Buckets
+site:.s3.amazonaws.com "Tesla"
+
+To simplify this process I copy the above into Sublime and copy replace Tesla with the Target name and then open all queries at once with the following chrome extension ;)
+
+https://chrome.google.com/webstore/detail/openlist/nkpjembldfckmdchbdiclhfedcngbgnl?hl=en
+
+We can also find specific content by appending the "ext:pdf or ext:conf" etc etc
