@@ -1,0 +1,6 @@
+file
+dict
+sftp
+tftp
+ldap
+gopher
