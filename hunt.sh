@@ -12,7 +12,7 @@ fi
 
 TARGET="$1"
 
-gau "$TARGET" --subs --blacklist jpg,jpeg,png,gif,svg,ico,css,js,woff,woff2,ttf,eot,map,json,txt --o "$TARGET.crawl"
+gau "$TARGET" --subs --blacklist jpg,jpeg,png,gif,svg,ico,css,js,woff,woff2,ttf,eot,map,json,txt | grep -ivE ':80' | grep '?' >"$TARGET.crawl"
 
 uro -i "$TARGET.crawl" -o "$TARGET.uro"
 
