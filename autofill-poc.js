@@ -1,3 +1,4 @@
+document.body.innerHTML="";
 const tailwind = document.createElement("script");
 tailwind.src = "https://cdn.tailwindcss.com";
 document.head.appendChild(tailwind);
